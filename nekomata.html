@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>クイズページ</title>
+  <title>てらめたる学園に隠されし秘宝</title>
 
   <link rel="stylesheet" href="./quiz_files/main.css">
 </head>
@@ -17,7 +17,8 @@
 
     <!-- 画像表示部分 -->
     <div class="quiz-image">
-      <img src="./quiz_files/still_2.jpg" alt="クイズ画像" id="quizImage">
+      <!-- <img src="./quiz_files/still_2.jpg" alt="クイズ画像" id="quizImage"> -->
+      <img src="./quiz_files/still_2.png" alt="クイズ画像" id="quizImage">
     </div>
 
     <!-- ストーリー文 -->
@@ -25,22 +26,41 @@
       でもエニ先生は方向音痴で、道順が分からないみたい。<br>
       仕方がないから、エニ先生にカフェまでの道を教えてあげよう！<br>
       <br>
-      <span class = "txt_red">てらめたる学園から音子先生のいるカフェまでの道をたどり、通ったひらがなを読もう！</span>
+      <span class = "txt_red">てらめたる学園から音子先生のいるカフェまでの道をたどり<br>通ったひらがなを読もう！</span>
     </p>
+
+
+    <h3>地図で表されているもの</h3>
+    <img src="./quiz_files/mapicon.png" alt="クイズ画像" class = "icon">
+
 
     <!-- 答え入力フォーム -->
     <div class="answer-section center">
-      <p><input type="text" id="Q1" placeholder="解答を入力"><br></p>
+      <p>通ったひらがなは<input type="text" id="Q1" placeholder=""><br></p>
     </div>
     
-    <button onclick="checkAnswers_Q2()" id="submitAnswer">解答をチェック</button>
+    <button onclick="checkAnswers_Q2()" id="submitAnswer">回答</button>
     <div id="message"></div>
 
     <div class = "margin">　</div>
 
     <!-- ヒントボタン -->
     <button id="hintButton">ヒントを表示</button>
-    <p id="hint" style="display:none;">ヒント: ヒントが入ります</p>
+    <div class="hint-container" id="hintContainer" style="display: none;">
+        <div class="hint" onclick="toggleHint(1)">ヒント1</div>
+        <div id="hint1" class="hint-content">
+            ああああああああ
+            <div class="hint" onclick="toggleHint(2)">ヒント2</div>
+            <div id="hint2" class="hint-content">
+                ああああああああ
+                <div class="hint" onclick="toggleHint(3)">ヒント3</div>
+                <div id="hint3" class="hint-content">
+                    ああああああああ
+                </div>
+            </div>
+        </div>
+    </div>
+
   </div>
 </body>
 

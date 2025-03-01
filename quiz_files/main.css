@@ -20,6 +20,16 @@ img {
   max-width: 200px;
 }
 
+.flex_box{
+  text-align: center;
+  display: flex;
+}
+
+.answer_box{
+  margin-left: 10px;
+  text-align: left;
+}
+
 .hint-container {
   display: flex;
   flex-direction: column;
@@ -75,6 +85,20 @@ img {
   display: block;
 }
 
+.button_img{
+  width: 80px;
+  height: 80px;
+}
+
+.icon_box{
+  display: flex;
+}
+
+.icon{
+  width: 80vw;
+  height: auto;
+}
+
 button {
   background-color: #26125e;
   color: white;
@@ -113,6 +137,7 @@ input {
   border-radius: 5px;
   font-size: 14px;
   box-sizing: border-box;
+  outline: none; /* フォーカス時のアウトラインを消す */
 }
 
 /* .incorrect {
@@ -213,7 +238,7 @@ button:disabled {
   }
 
   .answer-section{
-    width: 80%;
+    width: 90%;
   }
 
   .answer-section p {
@@ -249,6 +274,7 @@ button:disabled {
   input {
     padding: 10px;
     font-size: 12px;
+    max-width: 80px;
   }
 
   .answer-section p {
