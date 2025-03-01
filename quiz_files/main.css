@@ -1,0 +1,257 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+hr {
+  border: none; /* デフォルトのボーダーを消す */
+  border-top: 2px solid #cacaca; /* 上部にグレーの線を追加 */
+  width: 90%; /* 横幅を90%にする（調整可） */
+  margin: 20px auto; /* 上下の余白と中央寄せ */
+}
+
+img {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+}
+
+.hint-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  line-height: 1;
+}
+.hint {
+  cursor: pointer;
+  padding: 5px 10px;
+  /* border-left: 3px solid #007bff; */
+  margin: 5px 0;
+  font-weight: bold;
+}
+.hint-content {
+  display: none;
+  padding-left: 20px;
+  /* border-left: 2px solid #ccc; */
+  margin-left: 10px;
+}
+
+.quiz-container {
+  width: 90vw;
+  max-width: 600px;
+  height: auto;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#title-logo {
+  width: 80vw;
+  height: auto;
+  max-width: 400px;
+  margin: 20px 0;
+}
+
+.quiz-image {
+  width: 90%;
+  text-align: center; /* 画像を中央揃え */
+}
+
+.quiz-image img {
+  max-width: 600px;
+  margin: 20px auto; /* 横方向を中央揃え */
+  display: block;
+}
+
+button {
+  background-color: #26125e;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  width: auto;
+  box-sizing: border-box;
+}
+
+button:hover {
+  background-color: #5c4b8b;
+}
+
+.answer-section {
+  width: 80%;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.answer-section p {
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+input {
+  margin-left: 2px;
+  margin-right: 2px;
+  padding: 10px;
+  width: 100%;
+  max-width: 100px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* .incorrect {
+  border: 2px solid red;
+  color: red;
+} */
+
+.margin10{
+  margin: 10px 10px;
+}
+
+.incorrect {
+  background-color:rgba(251, 0, 0, 0.100);
+}
+
+button:disabled {
+  background-color: #ccc;
+}
+
+.center {
+  text-align: center !important;
+}
+
+.fixed-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column; /* 縦並び */
+  gap: 10px; /* ボタン間の余白 */
+  z-index: 1000; /* 他の要素より前面に表示 */
+}
+
+/* ボタンを含むボックス */
+.button-container {
+  position: absolute;
+  bottom: 10px; /* 親要素の下から10px */
+  right: 10px;  /* 親要素の右から10px */
+  display: flex;
+  flex-direction: column; /* 縦並び */
+  gap: 10px; /* ボタン間の余白 */
+}
+
+/* ボタンデザイン */
+.button-container a {
+  display: block;
+  background-color: #007BFF;
+  color: white;
+  text-align: center;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 10px;
+  width: 60px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button-container a:hover {
+  background-color: #0056b3;
+}
+
+/* テキスト色 */
+.txt_red{
+  color: red;
+}
+
+/* ボックス枠色 */
+.border_red{
+  border: 1px solid red;
+}
+
+.border_green{
+  border: 1px solid green;
+}
+
+.border_blue{
+  border: 1px solid blue;
+}
+
+.border_black{
+  border: 1px solid black;
+}
+
+@media screen and (max-width: 768px) {
+  .quiz-container {
+    padding: 15px;
+    width: 85vw;
+  }
+
+  .quiz-image img {
+    max-width: 300px;
+    margin: 5px 0;
+  }
+
+  iframe {
+    width: 300px;
+    height: auto;
+  }
+
+  .answer-section{
+    width: 80%;
+  }
+
+  .answer-section p {
+    font-size: 12px;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  input {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  img {
+    max-width: 150px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .quiz-container {
+    padding: 10px;
+    width: 90vw;
+  }
+
+  button {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  input {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .answer-section p {
+    font-size: 12px;
+  }
+}

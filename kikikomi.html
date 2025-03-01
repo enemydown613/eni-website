@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>てらめたる学園に隠されし秘宝</title>
+
+  <link rel="stylesheet" href="./quiz_files/main.css">
+</head>
+<body>
+  <div class="quiz-container">
+
+    <!-- ヘッダー -->
+    <div class="quiz-title">
+      <img src="./quiz_files/logo.png" alt="クイズ画像" id="logo-min">
+    </div>
+    <hr> <!-- 横線です -->
+
+    <!-- 画像表示部分 -->
+    <div class="quiz-image">
+      <img src="./quiz_files/still_1.jpg" alt="クイズ画像">
+    </div>
+
+    <!-- ストーリー文 -->
+    <p>エニ先生と一緒に学園内の生徒に聞き込みをすることになったあなた。<br>
+      聞き込み調査1～6の謎を解いて、生徒たちからの情報を集めよう！
+    </p>
+
+    <!-- 答え入力フォーム -->
+    <div class="answer-section">
+      <h4>聞き込み調査１</h4>
+      <p><input type="text" id="Q1" placeholder="" class = "border_green">先生が応接室にあるちょっといいお菓子を<br>
+        つまみ食いしてたよ。今度会ったら注意しなきゃ…<br><br></p>
+
+      <h4>聞き込み調査２</h4>
+      <p>この前<input type="text" id="Q2" placeholder="" class = "border_blue">の向かいのカフェで音子先生を見かけたよ。<br>
+        私もあんなおしゃれなカフェでお茶した〜い！<br><br></p>
+
+      <h4>聞き込み調査３</h4>
+      <p><input type="text" id="Q3" placeholder="" class = "border_red">室に掃除に入った時、<br>
+        先生が慌てて何かを隠したんだよ！あれは怪しい！<br><br></p>
+      
+      <h4>聞き込み調査４</h4>
+      <p>そういえば<input type="text" id="Q4" placeholder="" class = "border_blue">に面した十字路、工事しているみたいだね。<br>
+        今朝、ノピ先生が通れなくて遅刻しそうになってたよ。<br><br></p>
+      
+      <h4>聞き込み調査５</h4>
+      <p>最近放課後、だれもいないはずの<br>
+        <input type="text" id="Q5" placeholder="" class = "border_red">から声がするんだよね…<br><br></p>
+      
+      <h4>聞き込み調査６</h4>
+      <p>ここだけの話、<input type="text" id="Q6" placeholder="" class = "border_green">先生ってすっごく方向音痴らしいよ。<br>
+        学校に来るときもたまに道に迷ってるとか。<br><br></p>
+
+    </div>
+    
+    <button onclick="checkAnswers_Q1()" id="submitAnswer">回答</button>
+    <div id="message"></div>
+
+    <div class = "margin">　</div>
+
+    <!-- ヒントボタン -->
+    <button id="hintButton">ヒントを表示</button>
+    <div class="hint-container" id="hintContainer" style="display: none;">
+        <div class="hint" onclick="toggleHint(1)">ヒント1</div>
+        <div id="hint1" class="hint-content">
+            ああああああああ
+            <div class="hint" onclick="toggleHint(2)">ヒント2</div>
+            <div id="hint2" class="hint-content">
+                ああああああああ
+                <div class="hint" onclick="toggleHint(3)">ヒント3</div>
+                <div id="hint3" class="hint-content">
+                    ああああああああ
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 動画のリンク -->
+    <!-- <div class="button-container">
+      <a href="https://example.com" target="_blank">サイト1</a>
+      <a href="https://example.com" target="_blank">サイト2</a>
+    </div> -->
+    
+  </div>
+</body>
+
+<script src="./quiz_files/main.js"></script>
+
+</html>
