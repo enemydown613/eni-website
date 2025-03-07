@@ -22,10 +22,10 @@
     </div>
 
     <!-- ストーリー文 -->
-    <p>エニ先生と怪盗20と共に、隠し部屋に閉じ込められてしまった！<br>
+    <p>エニ先生と怪盗20と共に、<br>隠し部屋に閉じ込められてしまった！<br>
       なんとかして隠し部屋から脱出しよう！<br>
       <br>
-      <span class = "txt_red">セキュリティ解除マニュアルに記載されている2つのボタンのありかを記入し、それぞれのボタンを押す人物を指定しよう!<span>
+      <span class = "txt_red">セキュリティ解除マニュアルに記載されている<br>2つのボタンのありかを記入し、<br>それぞれのボタンを押す人物を指定しよう!<span>
     </p>
 
     <!-- 答え入力フォーム -->
@@ -35,7 +35,8 @@
         <img src="./quiz_files/button1.png" alt="ボタン１の画像" class = "button_img">
 
         <div class = "answer_box">
-          <p>ボタンの場所：<input type="text" id="Q1" placeholder="" class = "border_black">の中</p>
+          <!-- <p>ボタンの場所：<input type="text" id="Q1" placeholder="" class = "border_black">の中</p> -->
+          <p>ボタンの場所：液体窒素の中</p>
 
           <!-- <p>ボタンの場所１：
           <select id="Q1" class = "border_red">
@@ -104,6 +105,53 @@
 
     <div class = "margin">　</div>
 
+    <!-- ヒントボタン -->
+    <button id="hintButton">エニ先生に相談する（ヒント）</button>
+    <div class="hint-container" id="hintContainer" style="display: none;">
+      <p class="hint" onclick="toggleHint(1)">セキュリティ解除のヒント</p>
+      <div id="hint1" class="hint-content">
+        <p class="hint" onclick="toggleHint(2)">左のボタンを押す人が分からない</p>
+        <div id="hint2" class="hint-content">
+          <p>このボタンは液体窒素の中にあるんだよね……<br>
+            いや液体窒素って-196℃だよ！？死んじゃうよ！！なんとかできないかな…？<br>
+            動画を見直してみよう！</p>
+            <p class="hint" onclick="toggleHint(3)">左のボタンを押す人の答え</p>
+          <div id="hint3" class="hint-content">
+            <p>そういえば、怪盗20は『ありとあらゆる環境に適応できる』って自慢してた！<br>
+              よっしゃ！それだけ豪語するんだったら怪盗20に液体窒素の中を潜って押しに行ってもらおう！</p>
+          </div>
+        </div>
+        <div class="margin">　</div>
+
+        <p class="hint" onclick="toggleHint(4)">右のボタンがどこにあるか分からない</p>
+        <div id="hint4" class="hint-content">
+          <p>なんだかどこかで見たことがある気がするんだよな…<br>
+            どこで見たか思い出して！</p>
+            <p class="hint" onclick="toggleHint(5)">右のボタンの場所の答え</p>
+          <div id="hint5" class="hint-content">
+            <p>そうだ！聞き込み調査の様子を見ると、私の背後に写ってる！<br>
+              聞き込み調査をしているときに、音楽室の近くで見かけたね！</p>
+          </div>
+        </div>
+        <div class="margin">　</div>
+
+        <p class="hint" onclick="toggleHint(6)">右のボタンを押す人が分からない</p>
+        <div id="hint6" class="hint-content">
+          <p>右のボタンが隠し部屋の外にあることは分かったけど、<br>
+            大声を出しても外には聞こえないし、<br>
+            今は放課後で、みんな帰っちゃったんだよね…<br>
+            誰かボタンの近くにいる人はいないかな…？</p>
+            <p class="hint" onclick="toggleHint(7)">右のボタンを押す人の答え</p>
+          <div id="hint7" class="hint-content">
+            <p>"そういえば音子ちゃんに電話したとき、<br>
+              『この後音楽室に戻る用事がある』って言ってたね！<br>
+              よし、音子ちゃんに電話してボタンを押してもらおう！"</p>
+          </div>
+        </div>
+      </div>
+      <div class="margin">　</div>
+
+    </div>
   </div>
 </body>
 

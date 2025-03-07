@@ -58,28 +58,104 @@
     <div class = "margin">　</div>
 
     <!-- ヒントボタン -->
-    <button id="hintButton">ヒントを表示</button>
+    <button id="hintButton">エニ先生に相談する（ヒント）</button>
     <div class="hint-container" id="hintContainer" style="display: none;">
-        <div class="hint" onclick="toggleHint(1)">ヒント1</div>
-        <div id="hint1" class="hint-content">
-            ああああああああ
-            <div class="hint" onclick="toggleHint(2)">ヒント2</div>
-            <div id="hint2" class="hint-content">
-                ああああああああ
-                <div class="hint" onclick="toggleHint(3)">ヒント3</div>
-                <div id="hint3" class="hint-content">
-                    ああああああああ
-                </div>
-            </div>
-        </div>
-    </div>
+      <p class="hint" onclick="toggleHint(13)">何をすればよいか分からない</p>
+      <div id="hint13" class="hint-content">
+        <p>手元にある聞き込み調査と書かれた6枚の紙にある謎を解こう。<br>
+          謎の答えは生徒の発言の空欄に入るよ。<br>
+          謎が解けたら答えをひらがなで書いて空欄を埋めていこう！</p>
+      </div>
+      <div class="margin">　</div>
 
-    <!-- 動画のリンク -->
-    <!-- <div class="button-container">
-      <a href="https://example.com" target="_blank">サイト1</a>
-      <a href="https://example.com" target="_blank">サイト2</a>
-    </div> -->
-    
+      <p class="hint" onclick="toggleHint(1)">聞き込み調査1のヒント</p>
+      <div id="hint1" class="hint-content">
+        <p>全部で7文字のことわざみたいだね。<br>
+        イラストがなんのことわざを表しているか考えてみよう！</p>
+        <p class="hint" onclick="toggleHint(2)">ここから先は聞き込み調査1の答えです</p>
+        <div id="hint2" class="hint-content">
+          <p>イラストが表していることわざは『えにかいたもち』。<br>
+          答えは最後の二文字なので、答えは「もち」だね！</p>
+        </div>
+      </div>
+      <div class="margin">　</div>
+
+      <p class="hint" onclick="toggleHint(3)">聞き込み調査2のヒント</p>
+      <div id="hint3" class="hint-content">
+        <p>二つのイラストが表しているのはそれぞれ『ひめ』と『ふね』。<br>
+        この文字をマスにあてはめてみると…？</p>
+        <p class="hint" onclick="toggleHint(4)">ここから先は聞き込み調査2の答えです</p>
+        <div id="hint4" class="hint-content">
+          <p>マスは五十音表のな行～や行を表している。<br>
+          矢印が通るマスを順に読むと、答えは「はなや」！</p>
+        </div>
+      </div>
+      <div class="margin">　</div>
+
+      <p class="hint" onclick="toggleHint(5)">聞き込み調査3のヒント</p>
+      <div id="hint5" class="hint-content">
+        <p>四国と関東の地図だね！<br>
+        緑色で塗られている都道府県を読んでみよう！</p>
+        <p class="hint" onclick="toggleHint(6)">ここから先は聞き込み調査3の答えです</p>
+        <div id="hint6" class="hint-content">
+          <p>四国は高知が緑色になっていて、<br>
+          関東は東京の一部が緑色になっている。<br>
+          『こうち』と『とうきょう』なので、<br>
+          『こうち』はそのまま、『とうきょう』は後半を読んで、<br>
+          答えは「こうちょう」になるね！</p>
+        </div>
+      </div>
+      <div class="margin">　</div>
+
+      <p class="hint" onclick="toggleHint(7)">聞き込み調査4のヒント</p>
+      <div id="hint7" class="hint-content">
+        <p>上の言葉に何かを足すと下の言葉になるみたい。<br>
+        言葉を全てローマ字で書いてみよう！</p>
+        <p class="hint" onclick="toggleHint(8)">ここから先は聞き込み調査4の答えです</p>
+        <div id="hint8" class="hint-content">
+          <p>上の言葉をローマ字で書いたとき、<br>
+          頭にアルファベットを1文字足すと下の言葉になるよ。<br>
+          ankoはhankoに、tijikuはitijikuに、<br>
+          ankenはjankenになっているので、<br>
+          次に足されるアルファベットはk。<br>
+          ouenにkを足して答えは「こうえん」だね！</p>
+        </div>
+      </div>
+      <div class="margin">　</div>
+
+      <p class="hint" onclick="toggleHint(9)">聞き込み調査5のヒント</p>
+      <div id="hint9" class="hint-content">
+        <p>ぴったりとした入れ物の中でろうそくが燃えているね。<br>
+        ろうそくが燃えるためには何が必要かな？<br>
+        それが無くなってしまうと、火が消えちゃうね！</p>
+        <p class="hint" onclick="toggleHint(10)">ここから先は聞き込み調査5の答えです</p>
+        <div id="hint10" class="hint-content">
+          <p>ろうそくが燃えるためには酸素が必要。<br>
+          火が消えたということは、入れ物の中の酸素が<br>
+          無くなってしまったということ。<br>
+          文字の『さ』『ん』『そ』を消して<br>
+          残った文字を読むと答えは「りかしつ」！</p>
+        </div>
+      </div>
+      <div class="margin">　</div>
+
+      <p class="hint" onclick="toggleHint(11)">聞き込み調査6のヒント</p>
+      <div id="hint11" class="hint-content">
+        <p>この黄色い枠と、下の〇たちを、<br>
+        どこかで見たことなかったかな？<br>
+        今まで解いた問題を振り返ってみよう！</p>
+        <p class="hint" onclick="toggleHint(12)">ここから先は聞き込み調査6の答えです</p>
+        <div id="hint12" class="hint-content">
+          <p>この黄色い枠は聞き込み調査1のことわざ<br>
+          『えにかいたもち』の枠と同じだね！<br>
+          下の〇たちも聞き込み調査1の問題と<br>
+          ほぼ同じ場所にある。<br>
+          聞き込み調査1で聞かれている部分とは違って、<br>
+          最初の二文字を聞かれているから、<br>
+          答えは「えに」！私のこと！</p>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 

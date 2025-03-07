@@ -24,12 +24,12 @@ document.getElementById('hintButton').addEventListener('click', function() {
   
   if (hintContainer.style.display === 'none' || hintContainer.style.display === '') {
       hintContainer.style.display = 'block';
-      hint1.style.display = 'block';
+      // hint1.style.display = 'block';
       this.textContent = 'ヒントを非表示';
   } else {
       hintContainer.style.display = 'none';
       hint1.style.display = 'none';
-      this.textContent = 'ヒントを表示';
+      this.textContent = 'エニ先生に相談する（ヒント）';
   }
 });
 
@@ -104,7 +104,7 @@ function checkAnswers_Q2() {
 function checkAnswers_Q3() {
   // 正解リスト（ここを正しい答えに変更）
   const correctAnswers = {
-      Q1: "液体窒素",
+      // Q1: "液体窒素",
       Q2: "怪盗20",
       Q3: "音楽室",       // プルダウン
       Q4: "音子・エネルジコ"
@@ -145,7 +145,7 @@ function checkAnswers_Q3() {
 
 
 function postToX() {
-    const text = encodeURIComponent("ゲームクリアしました！ #てらめたる学園");
+    const text = encodeURIComponent("数多エニ謎解きセット『てらめたる学園に隠されし秘宝』でエニ先生と一緒に謎を解いた！ #てらめたる秘宝");
     const xUrl = `https://twitter.com/intent/tweet?text=${text}`;
     
     window.open(xUrl, "_blank"); // 新しいタブで開く
