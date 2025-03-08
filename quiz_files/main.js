@@ -65,7 +65,7 @@ function checkAnswers_Q1() {
     window.location.href = "sagashimono.html"; // 遷移先URLを変更してください
   }
   else {
-    alert("間違えがあるよ！もうすこし考えてみて！")
+    alert("間違いがあるよ！もうすこし考えてみて！")
   }
 }
 
@@ -97,17 +97,17 @@ function checkAnswers_Q2() {
     window.location.href = "keyget.html"; // 遷移先URLを変更してください
   }
   else {
-    alert("間違えがあるよ！もうすこし考えてみて！")
+    alert("間違いがあるよ！もうすこし考えてみて！")
   }
 }
 
 function checkAnswers_Q3() {
-  // 正解リスト（ここを正しい答えに変更）
+  // 正解リスト（複数の正解を配列で指定）
   const correctAnswers = {
       // Q1: "液体窒素",
-      Q2: "怪盗20",
-      Q3: "音楽室",       // プルダウン
-      Q4: "音子・エネルジコ"
+      Q2: ["怪盗20"],
+      Q3: ["音楽室", "おんがくしつ"],  // 複数の正解をリスト化
+      Q4: ["音子・エネルジコ"]
   };
 
   let allCorrect = true;
@@ -128,8 +128,8 @@ function checkAnswers_Q3() {
           userAnswer = inputField.value.trim(); // テキスト入力
       }
 
-      // ユーザーの回答を取得し、正解と比較
-      if (userAnswer !== correctAnswers[key]) {
+      // ユーザーの回答が正解リストのいずれかと一致するかチェック
+      if (!correctAnswers[key].includes(userAnswer)) {
           allCorrect = false;
           inputField.classList.add("incorrect"); // 間違っていたら赤くする
       }
@@ -139,7 +139,7 @@ function checkAnswers_Q3() {
   if (allCorrect) {
     window.location.href = "ending.html"; // 遷移先URLを変更してください
   } else {
-    alert("間違えがあるよ！もうすこし考えてみて！");
+    alert("間違いがあるよ！もうすこし考えてみて！");
   }
 }
 

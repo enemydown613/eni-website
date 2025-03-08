@@ -11,7 +11,7 @@ hr {
   border: none; /* デフォルトのボーダーを消す */
   border-top: 2px solid #cacaca; /* 上部にグレーの線を追加 */
   width: 90%; /* 横幅を90%にする（調整可） */
-  margin: 20px auto; /* 上下の余白と中央寄せ */
+  margin: 10px auto; /* 上下の余白と中央寄せ */
 }
 
 #logo-min {
@@ -33,11 +33,41 @@ img {
   text-align: left;
 }
 
+/* .mov-link-box{
+  margin-left: 20px;
+  margin-right: auto;
+  padding-bottom: 10px;
+} */
+
+.mov-link-box{
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 10px;
+}
+
+.mov-link-box div{
+  width: 120px; /* 固定幅 */
+}
+
+.link-btn{
+  color: purple; /* 文字色を紫に設定 */
+  text-decoration: underline; /* 下線を追加 */
+  text-decoration-color: purple; /* 下線の色も紫に設定 */
+  background: none; /* 背景をなくす */
+  border: none; /* 枠をなくす */
+  padding: 0; /* 余計な余白を削除 */
+  font-size: 14px;
+  cursor: pointer;
+}
+
 .hint-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
+  margin-right: auto;
   /* line-height: 1; */
 }
 .hint {
@@ -85,7 +115,7 @@ img {
 .quiz-image img {
   max-width: 600px;
   margin: 20px auto; /* 横方向を中央揃え */
-  display: block;
+  /* display: block; */
 }
 
 .button_img{
@@ -224,9 +254,18 @@ button:disabled {
   font-size: 1.1rem;
 }
 
+.left {
+  position: absolute;
+  left: 0; /* 左寄せ */
+}
+
 /* テキスト色 */
 .txt_red{
   color: red;
+}
+
+.txt_bold{
+  font-weight: bold;
 }
 
 /* ボックス枠色 */
@@ -255,6 +294,14 @@ button:disabled {
   .quiz-image img {
     max-width: 300px;
     margin: 5px 0;
+  }
+
+  .mov-link-box div{
+    width: 90px; /* 固定幅 */
+  }
+
+  .link-btn{
+    font-size: 10px;
   }
 
   iframe {
